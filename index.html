@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="katas.css">
+    <title>Katas de sélecteurs CSS</title>
+</head>
+
+<body>
+    <header>
+        <h1>Katas de sélecteurs CSS</h1>
+    </header>
+
+    <div>
+        <h3>Copiez cette référence et placez-la dans un onglet du navigateur:</h3>
+
+        <p><a
+                href="https://developer.mozilla.org/fr/docs/Web/CSS/S%C3%A9lecteurs_CSS">https://developer.mozilla.org/fr/docs/Web/CSS/Sélecteurs_CSS</a>
+        </p>
+
+    </div>
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_1">
+        <header class="clearfix">
+            <h1>1.1</h1>
+            <section>
+                <p>Repérer le html de l'exercice 1.1 (début à la ligne 24). <br> Repérer les CSS à compléter (ligne
+                    152).<br>
+
+                    Décommenter la déclaration qui suit le commentaire <br>
+                    <cite> /* exercice 1.1 ----------------------------------- */
+                    </cite>. <br>
+                    À la place de "selecteur", rédigez un
+                    <mark>sélecteur descendant (aussi appelé sélecteur contextuel)</mark>
+                    pour cibler les div qui se trouve dans une balise article.
+                </p>
+                <p>
+                    Vous avez réussi cet exercice si les div contenant le mot "boîte" dans cette page sont maintenant
+                    dans
+                    un carré gris.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+
+            <div>boîte</div>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_2">
+        <header class="clearfix">
+            <h1>1.2</h1>
+            <section>
+                <p>Par l'usage d'un
+                    <mark>sélecteur de frère adjacent</mark>, appliquer une marge gauche de 8px à toutes les boîtes de
+                    cette page jouxtant une autre boîte.
+                </p>
+                <p>Astuce: Dans cet exercice, la balise div est utilisée seulement pour les "boîtes".</p>
+            </section>
+        </header>
+        <article class="clearfix">
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_3">
+        <header class="clearfix">
+            <h1>1.3</h1>
+            <section>
+                <p>Par l'usage d'un
+                    <mark>sélecteur d'enfant</mark> dont l'enfant est un élément qui porte la <mark>classe
+                        .cible</mark>, appliquer une bordure au &lt;div&gt; qui englobe les &lt;div&gt; des boîtes.
+                </p>
+            </section>
+        </header>
+        <article class="clearfix">
+
+            <div class="cible">
+                <div>boîte 0</div>
+                <div>boîte 1</div>
+                <div>boîte 2</div>
+                <div>boîte 3</div>
+                <div>boîte 4</div>
+                <div>boîte 5</div>
+            </div>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_4">
+        <header class="clearfix">
+            <h1>1.4</h1>
+            <section>
+                <p>Par l'usage d'un
+                    <mark>sélecteur d'attribut</mark>, changer la couleur de fond de la boîte dont l'attribut data-link
+                    <mark>pointe vers une extension pdf</mark>
+                    .
+                </p>
+            </section>
+        </header>
+        <article class="clearfix">
+
+            <div data-link="unfichier.jpg">boîte 0</div>
+            <div data-link="unfichier.png">boîte 1</div>
+            <div data-link="unfichier.xls">boîte 2</div>
+            <div data-link="unfichier.pdf">boîte 3</div>
+            <div data-link="unfichier.doc">boîte 4</div>
+            <div data-link="unfichier.xml">boîte 5</div>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_5">
+        <header class="clearfix">
+            <h1>1.5</h1>
+            <section>
+                <p>Par l'usage d'un
+                    <mark>sélecteur d'attribut</mark>
+                    , changer la couleur de fond de la boîte dont l'attribut data-link
+                    <mark>pointe vers une url https://</mark>.
+                </p>
+            </section>
+        </header>
+        <article class="clearfix">
+
+            <div data-link="unfichier.local">boîte 0</div>
+            <div data-link="https://www.cyrilvernier.net/unfichier.distant">boîte 1</div>
+            <div data-link="./unfichier.local">boîte 2</div>
+            <div data-link="../unfichier.local">boîte 3</div>
+            <div data-link="ftp://www.cyrilvernier.net/unfichier.distant">boîte 4</div>
+            <div data-link="/unfichier.local">boîte 5</div>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_6">
+        <header class="clearfix">
+            <h1>1.6</h1>
+            <section>
+                <p>Par l'usage d'un sélecteur approprié, changer la couleur de fond des boîtes
+                    <mark>survolée par la souris</mark>
+                    . Le sélecteur doit s'appliquer uniquement pour les boites situées dans la <mark>classe
+                        'interactif'</mark>
+                </p>
+            </section>
+        </header>
+        <article class="clearfix interactif">
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_7">
+        <header class="clearfix">
+            <h1>1.7</h1>
+            <section>
+                <p>Par l'usage de la pseudo-classe :target, changer la couleur de fond de la boîte
+                    <mark>ciblée par <a href="#cible">ce lien</a></mark>
+                    La couleur s'appliquera seulement après avoir cliqué le lien.
+                </p>
+            </section>
+        </header>
+        <article class="clearfix">
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div id="cible">boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_8">
+        <header class="clearfix">
+            <h1>1.8</h1>
+            <section>
+                <p>Par l'usage d'un sélecteur approprié, changer
+                    <mark>la taille de la première lettre</mark>
+                    du texte de chaque boîte. Seulement dans le conteneur de <mark>classe 'lettrine'</mark>.
+                </p>
+            </section>
+        </header>
+        <article class="clearfix lettrine">
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_9">
+        <header class="clearfix">
+            <h1>1.9</h1>
+            <section>
+                <p>Par l'usage d'un sélecteur approprié, changer la couleur de fond de la
+                    <mark>première boîte</mark>. Seulement dans le conteneur de <mark>classe 'ainee'</mark>.
+                </p>
+            </section>
+        </header>
+        <article class="clearfix ainee">
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_10">
+        <header class="clearfix">
+            <h1>1.10</h1>
+            <section>
+                <p>Par l'usage d'un sélecteur approprié, changer la couleur de fond des
+                    <mark>boîtes paires</mark>. Seulement dans le conteneur de <mark>classe 'paires'</mark>.
+                </p>
+            </section>
+        </header>
+        <article class="clearfix paires">
+
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+            <div>boîte 6</div>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_11">
+        <header class="clearfix">
+            <h1>1.11</h1>
+            <section>
+                <p>Par l'usage de trois sélecteurs appropriés, changer la couleur de fond des boîtes pour alterner à
+                    toutes
+                    <mark>les trois boîtes</mark>
+                    entre 'pink', 'lightBlue' et 'coral', lightBlue...
+                </p>
+                <p>
+                    Doit s'appliquer seulement dans le conteneur de classe
+                    'multiple3'.
+                </p>
+            </section>
+        </header>
+        <article class="clearfix multiple3">
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_12">
+        <header class="clearfix">
+            <h1>1.12</h1>
+            <section>
+                <p>Par l'usage d'un sélecteur permettant de cibler les éléments vides ( <mark>empty</mark>), changer la
+                    couleur de fond <mark>des boîtes vides de contenu</mark>.
+                </p>
+            </section>
+        </header>
+        <article class="clearfix">
+
+            <div>boîte 0</div>
+            <div></div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div></div>
+            <div>boîte 5</div>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_13" class="surlignage">
+        <header class="clearfix">
+            <h1>1.13</h1>
+            <section>
+                <p>Par l'usage d'un sélecteur approprié, changer la couleur de fond du contenu <mark>surligné</mark> par
+                    une <mark>sélection</mark> à la souris ou au clavier.
+                </p>
+                <p>Par défaut le surlignage est bleu. Changez cela pour du "gold".</p>
+                <p>Faire cela seulement dans le contextte de la <mark>classe "surlignage"</mark></p>
+            </section>
+        </header>
+        <article class="clearfix">
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_14">
+        <header class="clearfix">
+            <h1>1.14</h1>
+            <section>
+                <p>En faisant un <mark>groupement de sélecteurs</mark>, changer la couleur du titre et du premier
+                    élément p. Chaque sélecteur du groupement doit être <mark>contextuel à la classe "groupe"</mark>.
+                </p>
+            </section>
+        </header>
+        <article class="clearfix groupe">
+
+            <h1>In girum imus nocte</h1>
+            <p>Signa te</p>
+            <p>Roma tibi</p>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+    <section id="exercice_1_15">
+        <header class="clearfix">
+            <h1>1.15</h1>
+            <section>
+                <p>Formatter la liste suivante, en enlevant les puces et en placant les items de liste en ligne.
+                    Ensuite, par l'usage de <mark>sélecteurs appropriés</mark>, placer un séparateur "|" (caractère
+                    <i>pipe</i>) entre chaque lien. Ajouter un dernier sélecteur pour
+                    ne pas que le dernier hyperlien soit suivi par le caractère <i>pipe</i></p>
+            </section>
+        </header>
+        <article class="clearfix">
+
+            <ul class="listeHorizontale">
+                <li><a href="#">un lien</a></li>
+                <li><a href="#">un autre lien</a></li>
+                <li><a href="#">toujours un lien</a></li>
+                <li><a href="#">encore un lien</a></li>
+            </ul>
+
+        </article>
+    </section>
+
+    <!-- ------------------------------------------------ -->
+
+
+</body>
+
+</html>
